@@ -1,0 +1,78 @@
+<div id="form" class="form">
+    <form class="form__inner" action="#" method="POST">
+        <div class="col">
+            <h1 class="form__title tx">
+                For business enquiries please use the form below
+            </h1>
+            <span class="tx_small form__req-info">Required</span>
+            <div class="form__item col">
+                <label for="name" class="form__subtitle form__subtitle_required tx_small">
+                    Name
+                </label>
+                <input id="name" type="text" class="form__name form__element tx" placeholder=" " required
+                    pattern="([A-Za-zА-Яа-яЁё]*[\s]*)*">
+                <p class="form__info form-info__name">
+                    The name should only contain letters and spaces
+                </p>
+            </div>
+            <div class="form__item col">
+                <label for="company" class="form__subtitle form__subtitle_required tx_small">
+                    Company
+                </label>
+                <input id="company" type="text" class="form__company form__element tx" placeholder=" " required>
+                <p class="form__info form-info__company">
+                    Write your company name
+                </p>
+            </div>
+            <div class="form__item col">
+                <label for="email" class="form__subtitle form__subtitle_required tx_small">
+                    E-mail
+                </label>
+                <input id="email" type="email" class="form__email form__element tx" placeholder=" " required>
+                <p class="form__info form-info__email">
+                    Enter your real email address
+                </p>
+            </div>
+            <div class="form__item col">
+                <label for="phone" class="form__subtitle tx_small">
+                    Phone
+                </label>
+                <input id="phone" type="tel" class="form__phone form__element tx" placeholder=" "
+                    pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18">
+                <p class="form__info form-info__phone">
+                    Enter your phone number
+                </p>
+            </div>
+            <div class="form__item col">
+                <label for="subject" class="form__subtitle tx_small">
+                    Subject
+                </label>
+                <input id="subject" type="text" class="form__subject form__element tx" placeholder=" " maxlength="80">
+            </div>
+            <div class="form__item col">
+                <label for="message" class="form__subtitle form__subtitle_required tx_small">
+                    Message
+                </label>
+                <textarea name="message" id="message" cols="30" rows="2" class="form__textarea  form__element tx"
+                    placeholder=" " required minlength="8"></textarea>
+                <p class="form__info form-info__textarea">
+                    Ask us a question
+                </p>
+            </div>
+
+            <div class="form__item col">
+                <p>
+                    <input class="form__checkbox" type="checkbox" id="form-checkbox">
+                    <label class="form__checkbox_label" for="form-checkbox"></label>
+                    <span class="tx_small">I accept</span>
+                    <a href="#" class="link">Terms and Privacy Policy</a>
+                </p>
+            </div>
+            <div class="form__item col">
+                <div class="row">
+                    <input class="form__submit btn tx" type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
